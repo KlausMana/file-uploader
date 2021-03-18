@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Upload Complete</title>
+    <style>
+        body {
+            background-color: lightgrey;
+            font-family: monospace;
+        }
+        #title {
+            color: navy;
+            text-align: center;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+        }
+        #return-btn {
+            padding: 10px 20px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 30px;
+            border: none;
+            color: white;
+            background-color: lightblue;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        #return-btn:hover {
+            background-color: navy;
+        }
+        #container {
+            background-color: white;
+            width: 25%;
+            margin: 0 auto;
+            margin-top: 10%;
+            padding: 20px 0;
+            box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">Your upload has been completed!</h1>
+        <form action="/complete" method="POST"><button type="submit" id="return-btn">Upload More Files</button></form>
+    </div>
+</body>
+</html>
